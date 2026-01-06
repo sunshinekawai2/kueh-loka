@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KuéhLoka</title>
+    <link rel="shortcut icon" type="image" href="./image/logokuih.png">
+    <link rel="stylesheet" href="style.css">
+    <!-- bootstrap links -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- bootstrap links -->
+    <!-- fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Uchen&display=swap" rel="stylesheet">
+    <!-- fonts links -->
+    <!-- icons links -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- icons links -->
+    <!-- animation links -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- animation links -->
+</head>
+
+<body>
+ <div class="all-content">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-md" id="navbar">
+            <!-- Brand -->
+            <a class="navbar-brand" href="#" id="logo">KuéhLoka</a>
+          
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span><img src="./image/menu.png" alt="" width="30px"></span>
+            </button>
+          
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <!-- dropdown -->
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">
+                     Category
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="kuihraya.html" class="dropdown-item">Kuih Raya</a>
+                        <a href="#" class="dropdown-item">Kuih Muih</a>
+                    </div>
+                </li>
+                <!-- dropdown -->
+                <li class="nav-item">
+                  <a class="nav-link" href="Gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="aboutus.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contactus.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div class="icons">
+            
+                     <a href="cart.html" style="text-decoration: none; position: relative;">
+        <img src="./image/add.png" alt="Cart" width="24px">
+        <span id="cart-count" class="badge badge-danger" style="position: absolute; top: -10px; right: -10px; font-size: 10px; border-radius: 50%; display: none;">0</span>
+    </a>
+
+            </div>
+          </nav>
+        <!-- navbar end -->
+
+<div class="alert alert-warning mt-3 overflow-hidden">
+  <div class="moving-text">
+     <strong>Makluman:</strong> Tempahan ditutup 7 hari sebelum Aidilfitri ·
+     Penghantaran seluruh Malaysia ·  Pickup tersedia
+  </div>
+</div>
+
+
+
+
+
+
+      <!-- product cards -->
+      <section id="product-cards"    data-aos="fade-up"
+      data-aos-duration="1500">
+        <div class="container">
+            <h1>Kuih Muih</h1>
+            <div class="row" style="margin-top:50px;">
+               <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button"class="btn btn-secondary quick-view"
+          data-name="Seri Ayu"
+          data-price="10.00"><i><img src="./image/views.png" alt="" width="30px"></i></button>
+                        <button type="button"class="btn btn-secondary wishlist"
+          data-name="Seri Ayu"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
+                        <button class="btn btn-secondary add-cart"
+          data-name="Seri Ayu"
+          data-price="10.00"><i><img src="./image/add.png" alt="" width="30px"></i></button>
+                    </div>
+
+
+                    <img src="./image/seriayu.png" alt="">
+                    <div class="card-body" >
+                        <h3>Seri Ayu</h3>
+                        <div class="star">
+                          <i class="bx bxs-star checked"></i>
+                          <i class="bx bxs-star checked"></i>
+                          <i class="bx bxs-star checked"></i>
+                          <i class="bx bxs-star "></i>
+                          <i class="bx bxs-star "></i>
+                        </div>
+                        <h6>RM10.00 <span><button>Add Cart</button></span></h6>
+                    </div>
+                </div>
+               </div>
+               <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary quick-view"
+          data-name="Seri Muka"
+          data-price="15.00"><i><img src="./image/views.png" alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary wishlist"
+          data-name="Seri Muka"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
+                        <button type="button"class="btn btn-secondary add-cart"
+          data-name="Seri Muka"
+          data-price="15.00"><i><img src="./image/add.png" alt="" width="30px"></i></button>
+                    </div>
+                    <img src="./image/serimuka1.png" alt="">
+                    <div class="card-body">
+                        <h3>Seri Muka</h3>
+                        <div class="star">
+                          <i class="bx bxs-star checked"></i>
+                          <i class="bx bxs-star checked"></i>
+                          <i class="bx bxs-star checked"></i>
+                          <i class="bx bxs-star "></i>
+                          <i class="bx bxs-star "></i>
+                        </div>
+                        <h6>RM10.00 <span><button>Add Cart</button></span></h6>
+                    </div>
+                </div>
+               </div>
+               <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary quick-view"
+          data-name="Lapis"
+          data-price="15.00"><i><img src="./image/views.png" alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary wishlist"
+          data-name="Lapis" ><i><img src="./image/heart.png" alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary add-cart"
+          data-name="Lapis"
+          data-price="15.00"><i><img src="./image/add.png" alt="" width="30px"></i></button>
+                    </div>
+                    <img src="./image/lapis.png" alt="">
+                    <span class="badge badge-danger" style="position:absolute; top:10px; left:10px;">
+  Best Seller
+</span>
+                    <div class="card-body">
+                        <h3>Lapis</h3>
+                        <div class="star">
+                          <i class="bx bxs-star checked"></i>
+                          <i class="bx bxs-star checked"></i>
+                          <i class="bx bxs-star checked"></i>
+                          <i class="bx bxs-star checked"></i>
+                          <i class="bx bxs-star "></i>
+                        </div>
+                        <h6>RM15.00 <span><button>Add Cart</button></span></h6>
+                    </div>
+                </div>
+               </div>
+               <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary quick-view"
+          data-name="Talam"
+          data-price="15.00"><i><img src="./image/views.png" alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary wishlist"
+          data-name="Talam"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary add-cart"
+          data-name="Talam"
+          data-price="15.00"><i><img src="./image/add.png" alt="" width="30px"></i></button>
+                    </div>
+                    <img src="./image/talam.png" alt="">
+                                  <span class="badge badge-danger" style="position:absolute; top:10px; left:10px;">
+  Best Seller
+</span>
+                    <div class="card-body">
+                        <h3>Talam</h3>
+                        <div class="star">
+                          <i class="bx bxs-star checked"></i>
+                          <i class="bx bxs-star checked"></i>
+                          <i class="bx bxs-star checked"></i>
+                          <i class="bx bxs-star checked"></i>
+                          <i class="bx bxs-star checked"></i>
+                        </div>
+                        <h6>RM15.00 <span><button>Add Cart</button></span></h6>
+                    </div>
+                </div>
+               </div>
+            </div>
+
+            <div class="row" style="margin-top:50px;"    data-aos="fade-up"
+            data-aos-duration="1500">
+                <div class="col-md-3 py-3 py-md-0">
+                 <div class="card">
+                     <div class="overlay">
+                         <button type="button" class="btn btn-secondary quick-view"
+          data-name="Bakar"
+          data-price="22.00"><i><img src="./image/views.png" alt="" width="30px"></i></button>
+                         <button type="button"class="btn btn-secondary wishlist"
+          data-name="Bakar"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
+                         <button type="button" class="btn btn-secondary add-cart"
+          data-name="Bakar"
+          data-price="22.00"><i><img src="./image/add.png" alt="" width="30px"></i></button>
+                     </div>
+
+                     <img src="./image/bakar.png" alt="">
+                     <span class="badge badge-danger" style="position:absolute; top:10px; left:10px;">
+  Best Seller
+</span>
+                     <div class="card-body">
+                         <h3>Bakar</h3>
+                         <div class="star">
+                           <i class="bx bxs-star checked"></i>
+                           <i class="bx bxs-star checked"></i>
+                           <i class="bx bxs-star checked"></i>
+                           <i class="bx bxs-star "></i>
+                           <i class="bx bxs-star "></i>
+                         </div>
+                         <h6>RM22.00 <span><button>Add Cart</button></span></h6>
+                     </div>
+                 </div>
+                </div>
+                <div class="col-md-3 py-3 py-md-0">
+                 <div class="card">
+                     <div class="overlay">
+                         <button type="button" class="btn btn-secondary quick-view"
+          data-name="Tepung Pelita"
+          data-price="15.00"><i><img src="./image/views.png" alt="" width="30px"></i></button>
+                         <button type="button" Class="btn btn-secondary wishlist"
+          data-name="Tepung Pelita"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
+                         <button type="button" class="btn btn-secondary add-cart"
+          data-name="Tepung Pelita"
+          data-price="15.00"><i><img src="./image/add.png" alt="" width="30px"></i></button>
+                     </div>
+                     <img src="./image/tepungpelita.png" alt="">
+                     <div class="card-body">
+                         <h3>Tepung Pelita</h3>
+                         <div class="star">
+                           <i class="bx bxs-star checked"></i>
+                           <i class="bx bxs-star checked"></i>
+                           <i class="bx bxs-star checked"></i>
+                           <i class="bx bxs-star "></i>
+                           <i class="bx bxs-star "></i>
+                         </div>
+                         <h6>RM15.00 <span><button>Add Cart</button></span></h6>
+                     </div>
+                 </div>
+                </div>
+                <div class="col-md-3 py-3 py-md-0">
+                 <div class="card">
+                     <div class="overlay">
+                         <button type="button" class="btn btn-secondary quick-view"
+          data-name="Onde onde"
+          data-price="15.00"><i><img src="./image/views.png" alt="" width="30px"></i></button>
+                         <button type="button" class="btn btn-secondary wishlist"
+          data-name="Onde onde"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
+                         <button type="button" class="btn btn-secondary add-cart"
+          data-name="Onde onde"
+          data-price="15.00"><i><img src="./image/add.png" alt="" width="30px"></i></button>
+                     </div>
+                     <img src="./image/ondeonde.png" alt="">
+                     <div class="card-body">
+                         <h3>Onde Onde</h3>
+                         <div class="star">
+                           <i class="bx bxs-star checked"></i>
+                           <i class="bx bxs-star checked"></i>
+                           <i class="bx bxs-star checked"></i>
+                           <i class="bx bxs-star checked"></i>
+                           <i class="bx bxs-star "></i>
+                         </div>
+                         <h6>RM20.00 <span><button>Add Cart</button></span></h6>
+                     </div>
+                 </div>
+                </div>
+                <div class="col-md-3 py-3 py-md-0">
+                 <div class="card">
+                     <div class="overlay">
+                         <button type="button" class="btn btn-secondary quick-view"
+          data-name="Kosui"
+          data-price="15.00"><i><img src="./image/views.png" alt="" width="30px"></i></button>
+                         <button type="button"class="btn btn-secondary wishlist"
+          data-name="Kosui"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
+                         <button type="button"class="btn btn-secondary add-cart"
+          data-name="Kosui"
+          data-price="15.00"><i><img src="./image/add.png" alt="" width="30px"></i></button>
+                     </div>
+                     <img src="./image/kosui.png" alt="">
+                     <div class="card-body">
+                         <h3>Kosui</h3>
+                         <div class="star">
+                           <i class="bx bxs-star checked"></i>
+                           <i class="bx bxs-star checked"></i>
+                           <i class="bx bxs-star checked"></i>
+                           <i class="bx bxs-star checked"></i>
+                           <i class="bx bxs-star checked"></i>
+                         </div>
+                         <h6>RM15.00 <span><button>Add Cart</button></span></h6>
+                     </div>
+                 </div>
+
+                </div>
+
+             </div>
+        </div>
+
+      </section>
+
+
+
+
+
+ <!-- footer -->
+      <footer id="footer"    data-aos="fade-up"
+      data-aos-duration="1500">
+        <h1 class="text-center">KuéhLoka</h1>
+        <p class="text-center">Carefully crafted, authentic taste</p>
+        <div class="icons text-center">
+            <i class="bx bxl-tiktok"></i>
+            <i class="bx bxl-facebook"></i>
+            <i class="bx bxl-instagram"></i>
+        </div>
+      </footer>
+      <!-- footer -->
+
+<div class="modal fade" id="quickViewModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="qvName"></h5>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p id="qvPrice"></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- TOAST -->
+<div id="toast" class="toast-msg"></div>
+
+
+
+      <a href="#" class="arrow"><i><img src="./image/up-arrow.png" alt="" width="50px"></i></a>
+
+
+
+    </div>
+
+
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+
+      <script>
+document.querySelectorAll('.quick-view').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.getElementById('qvName').innerText = btn.dataset.name;
+    document.getElementById('qvPrice').innerText = "Price: RM " + btn.dataset.price;
+    $('#quickViewModal').modal('show');
+  });
+});
+</script>
+
+
+<script>
+function showToast(message){
+  const toast = document.getElementById('toast');
+  toast.innerText = message;
+  toast.classList.add('show');
+
+  setTimeout(() => {
+    toast.classList.remove('show');
+  }, 2500);
+}
+
+/* Wishlist */
+document.querySelectorAll('.wishlist').forEach(btn => {
+  btn.addEventListener('click', () => {
+    showToast(btn.dataset.name + " added to Wishlist");
+  });
+});
+
+/* Cart */
+document.querySelectorAll('.add-cart').forEach(btn => {
+  btn.addEventListener('click', () => {
+    showToast(btn.dataset.name + " added to cart");
+  });
+});
+</script>
+
+
+
+  </body></html>

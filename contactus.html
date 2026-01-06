@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KuéhLoka</title>
+    <link rel="shortcut icon" type="image" href="./image/logokuih.png">
+    <link rel="stylesheet" href="style.css">
+    <!-- bootstrap links -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- bootstrap links -->
+    <!-- fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Uchen&display=swap" rel="stylesheet">
+    <!-- fonts links -->
+    <!-- icons links -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- icons links -->
+    <!-- animation links -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- animation links -->
+</head>
+
+<body>
+ <div class="all-content">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-md" id="navbar">
+            <!-- Brand -->
+            <a class="navbar-brand" href="#" id="logo">KuéhLoka</a>
+          
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span><img src="./image/menu.png" alt="" width="30px"></span>
+            </button>
+          
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <!-- dropdown -->
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">
+                     Category
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="kuihraya.html" class="dropdown-item">Kuih Raya</a>
+                        <a href="kuihmuih.htmk" class="dropdown-item">Kuih Muih</a>
+                    </div>
+                </li>
+                <!-- dropdown -->
+                <li class="nav-item">
+                  <a class="nav-link" href="  Gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="aboutus.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div class="icons">
+            
+                <img src="./image/add.png" alt="" width="24px">
+            </div>
+          </nav>
+        <!-- navbar end -->
+              <!-- contact  -->
+      <div class="container" id="contact" data-aos="fade-up" data-aos-duration="1500">
+    <h1>CONTACT US</h1>
+    <br> 
+    <p class="content p text-center" style="color: white; font-weight: bold; font-size: 18px; margin-bottom: 40px;">
+        Got questions, curious to know more about KuéhLoka? Send us a message below, and we’ll get back to you in a flash!
+    </p> 
+
+    <div class="row align-items-center"> <div class="col-md-5 d-none d-md-block" data-aos="fade-right" data-aos-delay="300">
+            <img src="./image/wanita.png" alt="Waving" class="img-fluid animation-lambai">
+        </div>
+
+        <div class="col-md-7">
+            <div class="row">
+                <div class="col-md-6 py-1">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="usr" placeholder="Name">
+                    </div>
+                </div>
+                <div class="col-md-6 py-1">
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="eml" placeholder="Email" required>
+                    </div>
+                </div>
+                <div class="col-md-12 py-1">
+                    <div class="form-group">
+                        <input type="number" class="form-control" id="phn" placeholder="Phone">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" rows="5" id="comment" placeholder="Message"></textarea>
+            </div>
+            <div id="messagebtn"><button>Send Message</button></div>
+        </div>
+    </div>
+</div>
+      <!-- contact end -->
+
+<div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Submission Status</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-center">
+        <img src="./image/logokuih.png" width="50px" alt=""><br><br>
+        <h4>Successfully!</h4>
+        <p>Thank you for your cooperation.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal" style="background-color: #ff9800; border:none;">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+    document.querySelector('#messagebtn button').addEventListener('click', function() {
+        const name = document.getElementById('usr').value;
+        const email = document.getElementById('eml').value;
+        const phone = document.getElementById('phn').value;
+        const message = document.getElementById('comment').value;
+
+        if (name && email && phone && message) {
+            // Paparkan Modal Bootstrap
+            $('#successModal').modal('show');
+
+            // Kosongkan form
+            document.getElementById('usr').value = '';
+            document.getElementById('eml').value = '';
+            document.getElementById('phn').value = '';
+            document.getElementById('comment').value = '';
+        } else {
+            alert("Please fill in all fields.");
+        }
+    });
+</script>
+
+
+       <!-- footer -->
+      <footer id="footer"    data-aos="fade-up"
+      data-aos-duration="1500">
+        <h1 class="text-center">KuéhLoka</h1>
+        <p class="text-center">Carefully crafted, authentic taste</p>
+        <div class="icons text-center">
+            <i class="bx bxl-tiktok"></i>
+            <i class="bx bxl-facebook"></i>
+            <i class="bx bxl-instagram"></i>
+        </div>
+      </footer>
+      <!-- footer -->
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+
+  </div></body>
+
+  <script>
+  
+    document.querySelector('#messagebtn button').addEventListener('click', function(e) {
+        // Ambil elemen input
+        const name = document.getElementById('usr');
+        const email = document.getElementById('eml');
+        const phone = document.getElementById('phn');
+        const message = document.getElementById('comment');
+
+        // Semak sama ada semua input memenuhi syarat HTML5 (required & email format)
+        if (name.checkValidity() && email.checkValidity() && phone.checkValidity() && message.checkValidity()) {
+            
+            // Tunjuk Modal Success
+            $('#successModal').modal('show');
+
+            // Kosongkan form selepas berjaya
+            name.value = '';
+            email.value = '';
+            phone.value = '';
+            message.value = '';
+            
+        } else {
+            // Jika tidak sah, biarkan browser tunjuk amaran "Please fill out this field" atau "Include an @"
+            // Kita gunakan reportValidity untuk trigger amaran asal browser
+            name.reportValidity() || email.reportValidity() || phone.reportValidity() || message.reportValidity();
+        }
+    });
+</script>
+</script>

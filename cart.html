@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KuéhLoka</title>
+    <link rel="shortcut icon" type="image" href="./image/logokuih.png">
+    <link rel="stylesheet" href="style.css">
+    <!-- bootstrap links -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- bootstrap links -->
+    <!-- fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Uchen&display=swap" rel="stylesheet">
+    <!-- fonts links -->
+    <!-- icons links -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- icons links -->
+    <!-- animation links -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- animation links -->
+</head>
+<body>
+    <div class="all-content">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-md" id="navbar">
+            <!-- Brand -->
+            <a class="navbar-brand" href="#" id="logo">KuéhLoka</a>
+          
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span><img src="./image/menu.png" alt="" width="30px"></span>
+            </button>
+          
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <!-- dropdown -->
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">
+                     Category
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="kuihraya.html" class="dropdown-item">Kuih Raya</a>
+                        <a href="kuihmuih.html" class="dropdown-item">Kuih Muih</a>
+                    </div>
+                </li>
+                <!-- dropdown -->
+                <li class="nav-item">
+                  <a class="nav-link" href="Gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="aboutus.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contactus.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div class="icons">
+                <img src="./image/add.png" alt="" width="24px">
+            </div>
+          </nav>
+        <!-- navbar end -->
+
+<div class="container" id="checkout" data-aos="fade-up" data-aos-duration="1500" style="margin-top: 50px; margin-bottom: 50px;">
+    <h1 class="text-center" style="font-family: 'Uchen', serif; color: #ff9800;">CHECKOUT DETAILS</h1>
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <form id="orderForm">
+                <div class="form-group">
+                    <label for="custName" style="color: white;">Full Name</label>
+                    <input type="text" class="form-control" id="custName" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="custPhone" style="color: white;">Phone Number</label>
+                    <input type="number" class="form-control" id="custPhone" placeholder="Example: 0123456789" required>
+                </div>
+
+ <div class="form-group">
+                    <label for="custPhone" style="color: white;">Quantity</label>
+                    <input type="number" class="form-control" id="custPhone" placeholder="Example: 1" required>
+                </div>
+
+                <div class="form-group">
+                    <label style="color: white;">Order Method</label>
+                    <select class="form-control" id="orderMethod" required onchange="toggleAddress()">
+                        <option value="" selected disabled>Select Delivery or Pickup</option>
+                        <option value="delivery">Delivery</option>
+                        <option value="pickup">Self-Pickup</option>
+                    </select>
+                </div>
+
+                <div class="form-group" id="addressSection">
+                    <label for="custAddress" style="color: white;">Delivery Address</label>
+                    <textarea class="form-control" id="custAddress" rows="3" placeholder="Enter your full address for delivery"></textarea>
+                </div>
+
+                <div id="messagebtn" class="text-center">
+                    <button type="button" onclick="validateOrder()">Confirm Order</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body text-center py-5">
+                <img src="./image/logokuih.png" width="80px" alt=""><br><br>
+                <h2 style="color: #ff9800;">Successfully!</h2>
+                <p>Thank you for your cooperation. We will contact you shortly.</p>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" style="background-color: #ff9800; border:none; padding: 10px 30px;">OK</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+      <!-- footer -->
+      <footer id="footer"    data-aos="fade-up"
+      data-aos-duration="1500">
+        <h1 class="text-center">KuéhLoka</h1>
+        <p class="text-center">Carefully crafted, authentic taste</p>
+        <div class="icons text-center">
+            <i class="bx bxl-tiktok"></i>
+            <i class="bx bxl-facebook"></i>
+            <i class="bx bxl-instagram"></i>
+        </div>
+      </footer>
+      <!-- footer -->
+
+      <a href="#" class="arrow"><i><img src="./image/up-arrow.png" alt="" width="50px"></i></a>
+     <script>
+    // Fungsi untuk sorok/tunjuk alamat berdasarkan pilihan
+    function toggleAddress() {
+        const method = document.getElementById('orderMethod').value;
+        const addressSection = document.getElementById('addressSection');
+        const addressInput = document.getElementById('custAddress');
+
+        if (method === 'delivery') {
+            addressSection.style.display = 'block';
+            addressInput.setAttribute('required', 'required');
+        } else {
+            addressSection.style.display = 'none';
+            addressInput.removeAttribute('required');
+        }
+    }
+
+    // Fungsi Validate dan Tunjuk Success
+    function validateOrder() {
+        const name = document.getElementById('custName');
+        const phone = document.getElementById('custPhone');
+        const method = document.getElementById('orderMethod');
+        const address = document.getElementById('custAddress');
+
+        // Check validity menggunakan built-in browser validation
+        if (name.checkValidity() && phone.checkValidity() && method.checkValidity() && (method.value === 'pickup' || address.checkValidity())) {
+            
+            // Papar modal
+            $('#successModal').modal('show');
+
+            // Reset form
+            document.getElementById('orderForm').reset();
+            document.getElementById('addressSection').style.display = 'block'; // reset view
+            
+        } else {
+            // Trigger browser punya error message (seperti 'Please fill out this field')
+            if (!name.checkValidity()) name.reportValidity();
+            else if (!phone.checkValidity()) phone.reportValidity();
+            else if (!method.checkValidity()) method.reportValidity();
+            else if (!address.checkValidity()) address.reportValidity();
+        }
+    }
+</script>
+
+    </div>
+
+
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>
